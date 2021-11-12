@@ -6,9 +6,57 @@
         <link rel="icon" href="file:///C:/Users/User/Desktop/Rasul/Python/any_projects_and_scripts/my_simple_web_server/temps/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <h1>Welcome to my simple website></h1>
+        <h1>Страница для подачи заявки на работу в X bank</h1>
         <hr/>
-        <p>This is Home Page<p/>
-        <p><a href="/contacts.html">Contacts</a></p>
+        <p>This is Home Page</p>
+        <p><a href="/contacts.html">Контакты</a></p>
+		
+		<form action="#" id="myForm" method="get">
+            <label for="FIO">Заполните ваши данные</label>
+            <hr>
+            <br>
+            <input name="IIN" id="IIN" placeholder="Введите ваш ИИН">
+            <br>
+            <br>
+            <input name="FIO" id="FIO" placeholder="Ваше ФИО">
+            <br>
+            <br>
+            <input name="Phone" id="Phone" placeholder="Ваше номер телефона" type="tel">
+            <br>
+            <br>
+            <input name="Birthday" id="Birthday" placeholder="Дата рождения" type="date">
+            <br>
+            <br>
+            <select name="education" id="education">
+                <optgroup label="Алматы">
+                    <option value="1">Универ 1</option>
+                    <option value="2">Универ 2</option>
+                    <option value="3">Универ 3</option>
+                </optgroup>
+                    <optgroup label="Астана">
+                    <option value="4">Универ 1</option>
+                    <option value="5">Универ 2</option>
+                    <option value="6">Универ 3</option>
+                </optgroup>
+                <optgroup label="Караганда">
+                    <option value="7">Универ 1</option>
+                    <option value="8">Универ 2</option>
+                    <option value="9">Универ 3</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <input name="BirthPlace" id="BirthPlace" placeholder="Место рождения">
+            <br>
+            <br>
+            <input name="email" id="email" placeholder="Почта" type="email">
+            <br>
+            <br>
+            <input name="Dolzhnost" id="Dolzhnost" placeholder="Должность">
+            <br>
+            <br>
+            <button>Send</button>
+        </form>
+    <script src="save_available_data.js"></script>
     </body>
 </html>
